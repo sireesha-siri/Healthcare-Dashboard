@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg-primary: #F6F7F8;
+  --color-bg-white: #FFFFFF;
+  --color-text-primary: #072635;
+  --color-text-secondary: #707070;
+  --color-text-tertiary: #C8CCD4;
+  --color-accent-green: #01F0D0;
+  --color-accent-green-light: #D8FCF7;
+  --color-accent-purple: #8C6FE6;
+  --color-accent-purple-light: #F4F0FE;
+  --color-accent-pink: #E66FD2;
+  --color-accent-pink-light: #FFE6F1;
+  --color-accent-red: #FF6B6B;
+  --color-accent-red-light: #FFEAEA;
+  --color-accent-blue-light: #E0F3FA;
+  --color-accent-peach-light: #FFE6E9;
+  --color-border: #E3E4E6;
+  --color-border-light: #EDEDED;
+  --color-purple-secondary: #7E6CAB;
+  --color-purple-tertiary: #C26EB4;
+  --color-gray-light: #CBC8D4;
+  --color-black: #000000;
+  --color-card-overlay: rgba(200, 204, 212, 0.14);
+  --color-card-overlay-light: rgba(200, 204, 212, 0.1);
+
+  
+  font-family: 'Manrope';
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+button {
+  font-family: 'Manrope', sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: 'Manrope', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-border-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-primary);  
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}

@@ -1,0 +1,147 @@
+.diagnostic-list-container {
+  background-color: var(--color-bg-white);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 335px;
+  overflow: hidden;
+}
+
+.diagnostic-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.diagnostic-list-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 33px;
+}
+
+.diagnostic-table {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr;
+  gap: 16px;
+  padding: 15px;
+  border-bottom: 2px solid var(--color-border);
+  margin-bottom: 12px;
+  background-color: #F6F7F8;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.table-col {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 19px;
+}
+
+.col-problem {
+  grid-column: 1;
+}
+
+.col-description {
+  grid-column: 2;
+}
+
+.col-status {
+  grid-column: 3;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-border-light);
+  align-items: center;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row .table-col {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  line-height: 19px;
+}
+
+.table-row .col-problem {
+  font-weight: 700;
+}
+
+.table-row .col-description {
+  color: var(--color-text-secondary);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 41px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .diagnostic-list-header h2 {
+    font-size: 20px;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1.2fr 1.8fr 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .diagnostic-list-container {
+    padding: 20px;
+    max-height: 350px;
+  }
+
+  .diagnostic-list-header h2 {
+    font-size: 18px;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .table-col {
+    font-size: 13px;
+  }
+
+  .table-row .table-col {
+    padding: 4px 0;
+  }
+
+  .col-status {
+    margin-top: 8px;
+  }
+}
+

@@ -1,0 +1,220 @@
+.diagnosis-history {
+  background-color: var(--color-bg-white);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.diagnosis-header h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 33px;
+}
+
+.blood-pressure-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #F4F0FE;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 24px;
+}
+
+.time-range-select {
+  padding: 8px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-range-select:hover {
+  border-color: var(--color-accent-green);
+}
+
+.chart-container {
+  background-color: #F4F0FE;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 280px;
+  height: 280px;
+  border: 1px solid var(--color-border-light);
+}
+
+.blood-pressure-readings {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.reading-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1;
+}
+
+.reading-indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.reading-card.systolic .reading-indicator {
+  background-color: #E66FD2;
+}
+
+.reading-card.diastolic .reading-indicator {
+  background-color: #8C6FE6;
+}
+
+.reading-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reading-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 19px;
+}
+
+.reading-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 30px;
+}
+
+.reading-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 19px;
+}
+
+.status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.status-icon.higher-than-average {
+  color: #E66FD2;
+}
+
+.status-icon.lower-than-average {
+  color: #8C6FE6;
+}
+
+.reading-divider {
+  width: 1px;
+  height: 60px;
+  background-color: var(--color-border);
+}
+
+.loading-placeholder {
+  padding: 40px;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 1199px) {
+  .diagnosis-header h2 {
+    font-size: 20px;
+  }
+
+  .section-header h3 {
+    font-size: 16px;
+  }
+
+  .chart-container {
+    min-height: 200px;
+    padding: 16px;
+  }
+
+  .blood-pressure-readings {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .reading-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .reading-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .diagnosis-history {
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .diagnosis-header h2 {
+    font-size: 18px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .section-header h3 {
+    font-size: 15px;
+  }
+
+  .time-range-select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .chart-container {
+    min-height: 180px;
+    padding: 12px;
+  }
+
+  .reading-value {
+    font-size: 20px;
+  }
+
+  .reading-label,
+  .reading-status {
+    font-size: 13px;
+  }
+}
+
